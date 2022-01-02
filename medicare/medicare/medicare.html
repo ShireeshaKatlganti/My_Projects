@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medicare</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="medicare.css">
+	<script src="https://kit.fontawesome.com/3a75bceaf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- -------------------- Top-Section------------------- -->
+	<section class="pt-2 pb-1 shadow sticky-top" style="background:#F9FAFD">
+		<div class="container">
+	    <div class="row" >
+	    		<div class="col-lg-8 col-md-10 col-4">
+		    		<ul class="navbar-nav">
+		            <li class="nav-item dropdown">
+		                <button class="btn dropdown-toggle me-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="images/united-states.svg" width="20"/>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item mt-2" href="#"><img src="images/united-states.svg" width="20"/>EN<i class="fa fa-check" aria-hidden="true"></i></a></li>
+					    <li><a class="dropdown-item" href="#"><img src="images/germany.svg" width="20"/>DE</a></li>
+					    <li><a class="dropdown-item" href="#"><img src="images/saudi-arabia.svg" width="20"/>AR</a></li>
+					  </ul>
+		            </li>
+		            <li class="nav-item">
+		              <span class="search1">
+							<input type="text" placeholder="Search...">
+							<i class="fa fa-search sicon" aria-hidden="true"></i>
+					</span>
+		            </li>
+		          </ul>
+			    </div>
+		         <div class="col-lg-4 col-md-2 col-8">
+		          <ul class="navbar-nav class1">
+			            <li class="nav-item"><a class="btn btn-outline-danger btn-sm mx-2" href="#!"><span class="d-none d-md-inline">Find a </span>Doctor</a></li>
+			            <li class="nav-item"><a class="btn btn-primary btn-sm" href="#appointmentModal" data-toggle="modal"><span class="d-none d-md-inline">Request </span>Appointment</a></li>
+		          </ul>
+	          </div>
+	    </div>
+	  </div>
+	</section>
+	<!-- ----------------------logo-section--------------- -->
+	<section class="logo-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-7">
+					<div class="logo-inside"><img src="images/logo.png" width="220"/></div>
+				</div>
+				<div class="d-none d-lg-block col-lg-5">
+					<div class="d-flex flex-row justify-content-end">
+						<div>
+							<h1 class="map1"><i class="fas fa-map-marker-alt"></i>Address</h1>
+							<ul class="map2">
+								<li>5525 W Slauson Ave,</li>
+								<li>LA, CA 90056, USA</li>
+							</ul>
+						</div>
+						<div class="line2"></div>
+						<div>
+							<h1 class="map1"><i class="fas fa-headset"></i>Phone Appointment</h1>
+							<ul class="map2">
+								<li><a href="#" class="map3">(555) 555-1234</a></li>
+								<li><a href="#" class="map3">(555) 555-1234</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- -------------------nav-bar section-------------- -->
+	<section class="nav-sec">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <div class="container">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Home
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		           Pages
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Components
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Utilities
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Plugins
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Documentation
+		          </a>
+		          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</section>
+	<!-- -----------------banner section------------------- -->
+	<section class="banner">
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="images/1.jpg" class="d-block w-100 imgs1" alt="...">
+		      <div class="carousel-caption caption1 d-block">
+		        <h5>Help is here<br>When You Need it</h5>
+		        <p>A&E average wait time: 30mins</p>
+		        <button>Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/3.jpg" class="d-block w-100 imgs1" alt="...">
+		      <div class="carousel-caption caption2 d-block">
+		        <h5>One Stop Solution<br>Medical services</h5>
+		        <p>Call to schedule an appointment today</p>
+		        <button>Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/2.jpg" class="d-block w-100 imgs1" alt="...">
+		      <div class="carousel-caption caption3 d-block">
+		        <h5>Small Injuries May<br>Lead to Big Problem</h5>
+		        <p>Your environment could affect your fertility</p>
+		        <button>Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" style="color:blue;" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+	<!-- --------------------below banner-section --------------------- -->
+	<section  style="background-color:#EDF2F9">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-7">
+					<div>
+						<h1 class="head1">STAY INFORMED. CONNECT WITH US.</h1>
+					</div>
+				</div>
+				<div class="col-12 col-md-5">
+					<div class="logos">
+						<i class="fa fa-facebook-square logo shadow" style="color:#3c5a99;" aria-hidden="true"></i>
+						<i class="fab fa-twitter logo shadow" style="color:#1da1f2;"></i>
+						<i class="fab fa-youtube logo shadow" style="color:red;"></i>
+						<i class="fab fa-linkedin logo shadow" style="color:#0077b5;"></i>
+						<i class="fab fa-pinterest logo shadow" style="color:#ef6262;"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- -----------------------helping patients-section------------------ -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="pb-4 text-center helps" style="position: relative;">
+						<h3>Brigham Health</h3>
+						<h1>HELPING OUR PATIENTS</h1>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- -------------------help section----------------- -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<div class="card card2">
+					  <ul class="list-group list-group-flush">
+					    <li class="list-group-item"><h2>HOW CAN WE HELP YOU?</h2></li>
+					    <li class="list-group-item" style="padding-top: 20px !important;">
+					    	<div class="d-flex flex-row justify-content-between disease1">
+								<h1>Find a Doctor</h1>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex flex-row justify-content-between disease1">
+								<h1>Request Appointment</h1>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex flex-row justify-content-between disease1">
+								<h1>Location</h1>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex flex-row justify-content-between disease1">
+								<h1>Services</h1>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+					    </li>
+					  </ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card card3">
+					    <img src="images/11.jpg" class="card-img-top" alt="...">
+					    <div class="card-body">
+					      <h5 class="card-title">Brigham Health Physicians Named 'Top Doctors'</h5>
+					      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This card has supporting text below as a natural lead-in to additional content.</p>
+					    </div>
+					    <div class="card-footer">
+					      <p class="text-muted">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="col-12 col-md-6 col-lg-4">
+					<div class="card card3">
+					    <img src="images/11.jpg" class="card-img-top" alt="...">
+					    <div class="card-body">
+					      <h5 class="card-title">BWH Named to US News & World Report's Honor Roll</h5>
+					      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+					      This card has supporting text below as a natural lead-in to additional content.</p>
+					    </div>
+					    <div class="card-footer">
+					      <p class="text-muted">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="col-lg-4"></div>
+				  <div class="col-12 col-lg-8">
+				  	<div class="card card1">
+					  <ul class="list-group list-group-flush">
+					    <li class="list-group-item"><h1>LATEST NEWS</h1></li>
+					    <li class="list-group-item"><ul>
+					    	<li>Scientists create molecular tool to remove toxic protein from neuronal models of dementia</li>
+					    	<li>Older women benefit significantly when screened with 3-D mammography</li>
+					    	<li>Older women benefit significantly when screened with 3-D mammography</li>
+					    	<li>Public announcement concerning a proposed health care project</li>
+					    </ul></li>
+					    <li class="list-group-item"><a href="#">View more news<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		<!-- -----------------All centers-section------------------ -->
+		<section class="centers">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="pb-4 text-center helps" style="position: relative;color:white">
+							<h3>All centers</h3>
+							<h1>CENTERS OF EXCELLENCE</h1>
+							<div class="line" style="background-color: white;"></div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Cancer-Center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Orthopedic center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Heart and vascular center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>The lung center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Neuroscience center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Women Health Center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>Primary Care Center</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="d-flex flex-row justify-content-between disease">
+							<h1>All Departments & services</h1>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-12">
+						<p>Although there is no magic formula for a long, healthy life, decades of research confirm certain behaviors improve your chances. After 43 years, The Nurses’ Health Study continues to find new insights for maintaining a healthy lifestyle.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ----------------------Recent posts-section----------------- -->
+		<section class="posts">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="pb-4 text-center helps" style="position: relative;">
+							<h3>RECENT POSTS</h3>
+							<h1>FROM OUR BLOG</h1>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/chair.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">Should You Be Worried About Microplastics in Your Food?</a></h6>
+						<a href="#" class="post1">John Doe </a> <i class="fas fa-circle"></i> <a href="#" class="post1">10 Jan, 2019</a>
+						<p>Plastic — it’s in the air, sea and probably your body. Find out what are microplastics doing to your health...</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/12.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">What to Expect During and After a Breast Biopsy</a></h6>
+						<a href="#" class="post1">Wiliam Petro </a> <i class="fas fa-circle"></i> <a href="#" class="post1">03 Feb, 2019</a>
+						<p>We interview Dr Lim Siew Kuan, a general surgeon at Mount Elizabeth Novena Hospital, to understand what to...</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/31.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">Should You Be Worried About Microplastics in Your Food?</a></h6>
+						<a href="#" class="post1">John Doe </a> <i class="fas fa-circle"></i> <a href="#" class="post1">10 Jan, 2019</a>
+						<p>Plastic — it’s in the air, sea and probably your body. Find out what are microplastics doing to your health...</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/4.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">What to Expect During and After a Breast Biopsy</a></h6>
+						<a href="#" class="post1">Wiliam Petro </a> <i class="fas fa-circle"></i> <a href="#" class="post1">03 Feb, 2019</a>
+						<p>We interview Dr Lim Siew Kuan, a general surgeon at Mount Elizabeth Novena Hospital, to understand what to...</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/5.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">Should You Be Worried About Microplastics in Your Food?</a></h6>
+						<a href="#" class="post1">John Doe </a> <i class="fas fa-circle"></i> <a href="#" class="post1">10 Jan, 2019</a>
+						<p>Plastic — it’s in the air, sea and probably your body. Find out what are microplastics doing to your health...</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<img src="images/6.jpg"/>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<h6><a href="#" class="post">What to Expect During and After a Breast Biopsy</a></h6>
+						<a href="#" class="post1">Wiliam Petro </a> <i class="fas fa-circle"></i> <a href="#" class="post1">03 Feb, 2019</a>
+						<p>We interview Dr Lim Siew Kuan, a general surgeon at Mount Elizabeth Novena Hospital, to understand what to...</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -------------donors section------------------ -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="donors d-flex flex-row">
+							<div class="d-flex flex-column justify-content-center">
+								<h1>Life, Giving, Breakthroughs.</h1>
+								<p>We are inspired by our patients’ courage, our caregivers’ compassion, and our scientists’ curiosity—all fueled by our donors’ generosity.</p>
+								<a class="btn btn-success btn-lg" href="#">Give Now</a>
+							</div>
+							<img src="images/13.jpg" width="50%" class="d-none d-lg-inline"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ------------------details section------------------ -->
+		<section class="details">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="d-flex flex-row">
+							<i class="fas fa-phone-alt"></i>
+							<div>
+								<a href="#">+(123) 456 78910</a>
+								<p>Have a question? call us now</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="d-flex flex-row">
+							<i class="far fa-envelope"></i>
+							<div>
+								<a href="#">help@medicare.com</a>
+								<p>Need support? Drop us an email</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="d-flex flex-row">
+							<i class="far fa-clock"></i>
+							<div>
+								<a href="#">Mon – Sat 07:00 – 21:00</a>
+								<p>We are open on</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -------------------footer section-------------------- -->
+		<section class="footer mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4">
+						<div style="margin-bottom: 60px;">
+							<img src="images/logo.png" width="300"/>
+							<h1>BRIGHAM AND WOMEN'S HOSPITAL</h1>
+							<ul class="anchor">
+								<li>75 FRANCIS STREET, BOSTON MA 02115</li>
+								<li>General information: <a href="#">671-732-5500</a></li>
+								<li>New Patients:  <a href="#">800-294-9999</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-3 col-lg-2">
+						<div>
+							<h2>CENTERS</h2>
+							<ul>
+								<li><a href="#">Cancer Center</a></li>
+								<li><a href="#">Heart & Vascular Center</a></li>
+								<li><a href="#">The Lung Center</a></li>
+								<li><a href="#">Neurosciences Center</a></li>
+								<li><a href="#">Orthopaedic & Arthritis Center</a></li>
+								<li><a href="#">Primary Care Center</a></li>
+								<li><a href="#">Women's Health Center</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div>
+							<h2>CLINICAL DEPARTMENTS</h2>
+							<div class="d-flex flex-row">
+								<ul>
+									<li><a href="#">Anesthesiology</a></li>
+									<li><a href="#">Dermatology</a></li>
+									<li><a href="#">Emergency Medicine</a></li>
+									<li><a href="#">Medicine</a></li>
+									<li><a href="#">Neurology</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Neurosurgery</a></li>
+									<li><a href="#">Orthopaedic Surgery</a></li>
+									<li><a href="#">Obstetrics and Gynecology</a></li>
+									<li><a href="#">Obstetrics and Gynecology</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3 col-lg-2">
+						<div>
+							<h2>DEPARTMENTS</h2>
+							<ul>
+								<li><a href="#">Anesthesiology</a></li>
+								<li><a href="#">Dermatology</a></li>
+								<li><a href="#">Emergency Medicine</a></li>
+								<li><a href="#">Medicine</a></li>
+								<li><a href="#">Neurology</a></li>
+								<li><a href="#">Neurosurgery</a></li>
+								<li><a href="#">Orthopaedic Surgery</a></li>
+								<li><a href="#">Obstetrics and Gynecology</a></li>
+								<li><a href="#">Obstetrics and Gynecology</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			Thank you for creating with medicare | 2019 © <a href="#">ThemeWagon</a><span class="d-none d-md-inline">v1.0.0</span>
+		</footer>
+</body>
+</html>
